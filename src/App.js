@@ -14,7 +14,7 @@ const useNotes = (url) => {
 const App = () => {
   const [counter, setCounter] = useState(0);
   const [values, setValues] = useState([]);
-  const url = "https://blooming-atoll-75500.herokuapp.com/api/notes";
+  const url = BACKEND_URL;
   const notes = useNotes(url);
   console.log(notes);
 
